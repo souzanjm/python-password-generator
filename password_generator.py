@@ -35,7 +35,7 @@ if use_numbers == "y":
     pool += digits
 
 if pool == "":
-    print("You must select at least one character type 😭")
+    print("You must select at least one character type.")
 else:
     password_chars = []
 
@@ -54,5 +54,6 @@ else:
     secrets.SystemRandom().shuffle(password_chars)
 
     password = "".join(password_chars)
+
 
     print(f"\nGenerated password: {password}")
