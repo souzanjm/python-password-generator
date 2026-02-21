@@ -9,7 +9,7 @@ print("Bem vindo ao 🔐 Gerador de Senhas Py!")
 
 while True:
     try:
-        length = int(input("Tamanho da senha: "))
+        length = int(input("💡 Dica: O tamanho ideal para uma senha é de no mínimo 8 caracteres!\nTamanho da senha (em números): "))
 
         if length > 0:
             break
@@ -25,13 +25,13 @@ use_numbers = input("Incluir números? (s/n): ").lower()
 
 pool = ""
 
-if use_letters == "y":
+if use_letters == "s":
     pool += letters
 
-if use_symbols == "y":
+if use_symbols == "s":
     pool += symbols
 
-if use_numbers == "y":
+if use_numbers == "s":
     pool += digits
 
 if pool == "":
@@ -39,13 +39,13 @@ if pool == "":
 else:
     password_chars = []
 
-    if use_letters == "y":
+    if use_letters == "s":
         password_chars.append(secrets.choice(letters))
 
-    if use_symbols == "y":
+    if use_symbols == "s":
         password_chars.append(secrets.choice(symbols))
 
-    if use_numbers == "y":
+    if use_numbers == "s":
         password_chars.append(secrets.choice(digits))
 
     while len(password_chars) < length:
