@@ -9,7 +9,7 @@ print("Welcome to the 🔐 PyPassword Generator!")
 
 while True:
     try:
-        length = int(input("Password length: "))
+        length = int(input("💡 Tip: The ideal password length is at least 8 characters!\nPassword length (numbers only): "))
 
         if length > 0:
             break
@@ -57,3 +57,4 @@ else:
 
 
     print(f"\nGenerated password: {password}")
+
