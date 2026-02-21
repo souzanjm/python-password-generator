@@ -5,7 +5,7 @@ letters = string.ascii_letters
 digits = string.digits
 symbols = string.punctuation
 
-print("Bem vindo ao 🔐 Gerador de Senhas Py!")
+print("Bem vindo(a) ao 🔐 Gerador de Senhas Py!")
 
 while True:
     try:
