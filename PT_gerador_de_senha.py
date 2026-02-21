@@ -14,7 +14,7 @@ while True:
         if length > 0:
             break
         else:
-            print("A senha deve ser maior do que zero \nTente novamente!")
+            print("A senha deve ser maior do que zero. \nTente novamente!")
     
     except ValueError:
         print("Por favor, digite um número válido.")
